@@ -55,6 +55,7 @@ public class MainActivity extends AppCompatActivity {
                                         "Get the official Android IDE and developer tools " +
                                         "to build apps for Android."
                         ))
+                        .setPriority(Notification.PRIORITY_MAX)
                         .build();
 
                 notificationManager.notify(NOTIFICATION_ID, notification);
