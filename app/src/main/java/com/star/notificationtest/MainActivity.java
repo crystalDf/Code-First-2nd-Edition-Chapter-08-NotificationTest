@@ -19,13 +19,15 @@ public class MainActivity extends AppCompatActivity {
 
     public static final int NOTIFICATION_ID = 1;
 
+    private Button mSendNotification;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button sendNotification = (Button) findViewById(R.id.send_notification);
-        sendNotification.setOnClickListener(new View.OnClickListener() {
+        mSendNotification = (Button) findViewById(R.id.send_notification);
+        mSendNotification.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
 
